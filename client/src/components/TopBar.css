@@ -1,0 +1,51 @@
+.topnav{
+  height: 5rem;
+  background-color: #FFB109;
+  display: flex;
+}
+.right {
+  display: flex;
+  padding-top: 2rem;
+  flex: 32 1 75rem;
+}
+.left {
+  display: flex;
+  padding-top: 2rem;
+  flex: 32 1 75rem;
+  justify-content: flex-end;
+margin-right: 5rem;
+}
+.top_span{
+  margin-left: 1.5rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand{
+    position: relative;
+    left:20px;
+  }
+  .brand_name {
+    font-size: 3rem;
+    color: #FFB109;
+  }
+  .brand_name:hover {
+    color:#FFB109;
+  }
+
+  .right-content ul  {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-right: 4rem;
+  }
+  .right-content ul li {
+    
+    display: inline-block;
+    padding-right: 3rem;
+    color: black;
+  }

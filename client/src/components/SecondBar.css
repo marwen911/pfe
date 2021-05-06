@@ -1,0 +1,48 @@
+.navbar {
+ 
+    height: auto;
+    min-height: 6vh;
+    box-sizing: border-box;
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    background:#101B31;
+    transition: all .0s ease-in;
+    z-index: 9999;
+    }
+    .scrolled{
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0.2px 3px 6px grey;
+    }
+    nav{
+       height: auto;
+        flex: 32 1 75rem;
+    }
+    nav ul {
+    position: relative;
+    right:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    }
+    .navtext {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    }

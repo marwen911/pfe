@@ -1,0 +1,120 @@
+/* Featured Products */
+
+.title {
+  margin: 4rem 0 7rem 0;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+  transform: translate(-50%, -50%);
+  background-color: var(--pink);
+  width: 50%;
+  height: 0.4rem;
+  z-index: 1;
+}
+
+
+.product {
+  height: 450px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 300ms ease-in-out;
+  z-index: 0;
+}
+
+.product:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.product-header {
+  position: relative;
+  height: 350px;
+  background-color: #f6f2f1;
+  transition: all 300ms ease-in-out;
+  z-index: 0;
+}
+
+.product-header img {
+  height: 350px;
+  width: 250px;
+  z-index: 0;
+}
+
+.product-footer {
+  padding: 1rem 1.6rem 1.6rem 1.6rem;
+}
+
+
+.product-footer .price {
+  color: #eb5d24;
+  font-size: 2rem;
+}
+
+.product:hover .product-header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+}
+
+.product-header .icons {
+  position: absolute;
+  right: 5%;
+  top: 70%;
+  transform: translate(0, -50%) scale(0);
+  z-index: 2;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.product-header .icons span {
+  background-color: #fff;
+  font-size: 2rem;
+  display: block;
+  border-radius: 50%;
+  padding: 1.5rem 1.6rem;
+  line-height: 1rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.product-header .icons span  Link .i {
+  transition: all 500ms ease-in-out;
+}
+
+.product-header .icons span:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.product-header .icons span:hover {
+  background-color: #eb5d24;
+  color: #fff;
+}
+
+.product:hover .icons {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
+}
+
+.product-header .icons a {
+  display: block;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,24 @@
+.selec {
+  border-right: none;
+}
+   
+ .search {
+   display: flex;
+ }
+  .rech{
+    width: 40rem;
+    height: 4.2rem;
+
+    
+    
+  }
+ .butt{
+  width: 5rem;
+  background: #424646;
+  color: #fff;
+  border-left: none;
+  }
+  .butt:hover
+  {
+    background: #FFB109;
+  }
